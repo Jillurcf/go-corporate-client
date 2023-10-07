@@ -1,11 +1,14 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
+import AosAnimation from "../Home/AosAnimation";
+
 
 const ServiceCard = ({ service }) => {
   const { id, name, image, price, shortDescription } = service;
 
   return (
     <div className="max-w-screen-2xl mx-auto">
+      
       <div className="m-12 card bg-base-100 shadow-xl">
         <figure>
           <img src={image} alt="Shoes" />

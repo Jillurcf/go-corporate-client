@@ -4,6 +4,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 import slide_image1 from "../../../assets/corporateMeeting.jpg";
@@ -12,11 +13,18 @@ import  slide_image3 from "../../../assets/awardCeremony.jpg";
 import slide_image4 from "../../../assets/productlaunch.jpg";
 import slide_image5 from "../../../assets/tradeShowandexpo.jpg";
 import slide_image6 from "../../../assets/teamBuildingWorkshop.jpg";
+import AosAnimation from "../AosAnimation";
+
 
 
 const Slider = () => {
+ 
   return (
     <div className="container">
+    
+      <div data-aos="fade-right">
+      
+        </div> 
    
       <Swiper
         effect={"coverflow"}

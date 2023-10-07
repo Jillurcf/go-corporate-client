@@ -1,11 +1,17 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const NavBar = () => {
   const {user, logOut} = useContext(AuthContext)
-
+  useEffect(()=>{
+    AOS.init()
+    AOS.refresh()
+  },[])
   const handleLogOut = ()=>{
     logOut()
     .then(result =>{
@@ -109,7 +115,7 @@ const NavBar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost font-bold normal-case text-2xl">GOcorporate</a>
+        <a data-aos="fade-up"  className=" font-bold normal-case text-2xl">GOcorporate</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
