@@ -9,6 +9,8 @@ import ServiceDetail from "../Pages/Services/ServiceDetail";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
+import SpecialFeatures from "../Pages/Special/SpecialFeatures";
+import SpecialOffer from "../Pages/Special/SpecialOffer";
 
 
 
@@ -57,6 +59,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>
+      },
+      {
+        path: "/specialfeatures",
+        element: <PrivateRoute><SpecialFeatures></SpecialFeatures></PrivateRoute>
+      },
+      {
+        path: "specialoffer",
+        element: <PrivateRoute><SpecialOffer></SpecialOffer></PrivateRoute>
       }
 
     ]
