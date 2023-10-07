@@ -7,16 +7,15 @@ import { AuthContext } from '../../Provider/AuthProvider';
 const Register = () => {
   
  
-  const {createUser} = useContext(AuthContext);
+  const {createUser, signInWithGoogle} = useContext(AuthContext);
 
     const handleRegister = e =>{
         e.preventDefault();
         const form = new FormData(e.currentTarget)
         const name = form.get('name');
-        const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password')
-        console.log(name, email, photo, password);
+        console.log(name, email, password);
         createUser(email, password)
         .then(result => {
             console.log(result.user);
@@ -25,8 +24,14 @@ const Register = () => {
             console.error(error);
         })
 }
+
+const handleGoogleSignIn = ()=>{
+  signInWithGoogle()
+  .then(result => console.log(result.user))
+  .catch(error=> console.log(error))
+}
     return (
-        <div className="max-w-screen-2xl h-[50vh] items-center">
+        <div className="max-w-screen-2xl h-auto items-center">
        
         <div className="item-center mt-24">
         <h2 className="text-center text-2xl font-bold">Please Register</h2>
@@ -67,9 +72,9 @@ const Register = () => {
                 required
               />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
+              <p onClick={handleGoogleSignIn} href="#" className="label-text-alt link link-hover text-2xl font-semibold text-blue-700">
+              <Link to="/">Sign in with Google? </Link>
+              </p>
               </label>
             </div>
             <div className="form-control mt-6">
