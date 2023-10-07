@@ -6,6 +6,8 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Services from "../Pages/Services/Services";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import ServiceDetail from "../Pages/Services/ServiceDetail";
+import Register from "../Pages/Register/Register";
+import Login from "../Pages/Login/Login";
 
 
 
@@ -44,8 +46,16 @@ const router = createBrowserRouter([
 
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <ContactUs></ContactUs>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
       }
 
     ]
