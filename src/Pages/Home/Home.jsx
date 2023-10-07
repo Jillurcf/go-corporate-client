@@ -1,5 +1,7 @@
 
+import AboutUs from '../AboutUs/AboutUs';
 import NavBar from '../NavBar/NavBar';
+import Services from '../Services/Services';
 
 import Slider from './Slider/Slider';
 
@@ -9,10 +11,10 @@ import Slider from './Slider/Slider';
 const Home = () => {
     return (
         <div>
-          
-            <NavBar></NavBar>
-            <h2 className='text-2xl'>This is home</h2>
+        
           <Slider></Slider>
+          <Services></Services>
+          <AboutUs></AboutUs>
         </div>
     );
 };

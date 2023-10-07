@@ -6,12 +6,18 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
-import slide_image from "../../../assets/pressTalk.jpg";
+import slide_image1 from "../../../assets/corporateMeeting.jpg";
+import slide_image2 from "../../../assets/conferenceAndSeminer.jpg";
+import  slide_image3 from "../../../assets/awardCeremony.jpg";
+import slide_image4 from "../../../assets/productlaunch.jpg";
+import slide_image5 from "../../../assets/tradeShowandexpo.jpg";
+import slide_image6 from "../../../assets/teamBuildingWorkshop.jpg";
+
 
 const Slider = () => {
   return (
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
+   
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -34,23 +40,43 @@ const Slider = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={slide_image} alt="" />
+          <img src={slide_image1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="relative" src={slide_image} alt="" />
+          <img className="relative" src={slide_image2} alt="" />
           <h1 className="absolute text-red-700 bg-green-950 top-[50%] left-[20%]">Meeting</h1>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image} alt="" />
+          <img src={slide_image3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image} alt="" />
+          <img src={slide_image4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image} alt="" />
+          <img src={slide_image5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image} alt="" />
+          <img src={slide_image6} alt="" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={slide_image1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="relative" src={slide_image2} alt="" />
+          <h1 className="absolute text-red-700 bg-green-950 top-[50%] left-[20%]">Meeting</h1>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image3} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image4} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image5} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image6} alt="" />
         </SwiperSlide>
 
         <div className="slider-controler">

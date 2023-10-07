@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "name": "Conferences and Seminars",
+      "image": "https://i.ibb.co/nnFBNMj/conference-And-Seminer.jpg",
+      "price": "$29.99/month",
+      "shortDescription": "Ultimate cleaning magic. Say goodbye to dirt!",
+      "button": {
+        "label": "Subscribe Now",
+        "link": "https://example.com/subscribe/magicclean",
+        "color": "#FF5733"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Trade Shows and Expos",
+      "image": "https://i.ibb.co/xgkLpGN/trade-Showandexpo.jpg",
+      "price": "$15.99/month",
+      "shortDescription": "Protect your gadgets. Stay safe, stay shielded!",
+      "button": {
+        "label": "Get Started",
+        "link": "https://example.com/start/techguard",
+        "color": "#3366FF"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Team Building Workshops",
+      "image": "https://i.ibb.co/XyP67Xq/team-Building-Workshop.jpg",
+      "price": "$50.00/month",
+      "shortDescription": "Flexible fitness plans for everyone.",
+      "button": {
+        "label": "Join Today",
+        "link": "https://example.com/join/fitflex",
+        "color": "#28A745"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Product Launches",
+      "image": "https://i.ibb.co/C5mYDXt/productlaunch.jpg",
+      "price": "$100.00/meal",
+      "shortDescription": "Gourmet meals delivered to your door.",
+      "button": {
+        "label": "Order Now",
+        "link": "https://example.com/order/tastebud",
+        "color": "#FFC107"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Corporate Meetings",
+      "image": "https://i.ibb.co/82pDvNc/corporate-Meeting.jpg",
+      "price": "$199.00/year",
+      "shortDescription": "Master any subject with expert courses.",
+      "button": {
+        "label": "Enroll",
+        "link": "https://example.com/enroll/edumaster",
+        "color": "#17A2B8"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Award Ceremonies",
+      "image": "https://i.ibb.co/mTWFfpg/award-Ceremony.jpg",
+      "price": "$60.00/session",
+      "shortDescription": "Pampering sessions for your furry friends.",
+      "button": {
+        "label": "Book Session",
+        "link": "https://example.com/book/petpamper",
+        "color": "#FD7E14"
+      }
+    }
+  ]
+  
