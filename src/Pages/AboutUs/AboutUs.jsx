@@ -101,24 +101,15 @@ const AboutUs = () => {
             </p>
             <h2 className="mt-8 text-xl font-semibold">Our Goal</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              consequatur debitis itaque magnam earum labore hic incidunt
-              quidem. Necessitatibus eligendi deleniti debitis sapiente
-              consequuntur, quia a consectetur et hic. Nostrum.
+            To successfully organize and manage 100 corporate events in the next fiscal year, achieving at least a 95% client satisfaction rate.
             </p>
             <h2 className="mt-8 text-xl font-semibold">Our Mission</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              consequatur debitis itaque magnam earum labore hic incidunt
-              quidem. Necessitatibus eligendi deleniti debitis sapiente
-              consequuntur, quia a consectetur et hic. Nostrum.
+            To deliver unparalleled event experiences that capture the essence and objectives of our corporate clients. Through a blend of creativity, precision, and a deep understanding of our clients' brands, we strive to make every event a memorable milestone..
             </p>
             <h2 className="mt-8 text-xl font-semibold">Our Vission</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              consequatur debitis itaque magnam earum labore hic incidunt
-              quidem. Necessitatibus eligendi deleniti debitis sapiente
-              consequuntur, quia a consectetur et hic. Nostrum.
+            To be the world's most trusted partner in corporate event management. Our vision is to redefine the way businesses experience events, pushing the boundaries of creativity and precision, and setting a global standard for excellence in the industry.
             </p>
           </div>
         </div>

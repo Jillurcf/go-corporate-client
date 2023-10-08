@@ -62,11 +62,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/specialfeatures",
-        element: <PrivateRoute><SpecialFeatures></SpecialFeatures></PrivateRoute>
+        element: <PrivateRoute><SpecialFeatures></SpecialFeatures></PrivateRoute>,
+        loader: () => fetch('/service.json')
       },
       {
         path: "specialoffer",
-        element: <PrivateRoute><SpecialOffer></SpecialOffer></PrivateRoute>
+        element: <PrivateRoute><SpecialOffer></SpecialOffer></PrivateRoute>,
+        
       }
 
     ]

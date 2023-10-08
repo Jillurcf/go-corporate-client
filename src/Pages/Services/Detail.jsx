@@ -1,11 +1,11 @@
 import React from "react";
 
 const Detail = ({ service }) => {
-  const { image, name, shortDescription, price } = service;
+  const { image, name, fullDescription, shortDescription, price } = service;
   console.log(service);
   return (
     <div className="mx-auto m-12">
-      <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative flex max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img src={image} alt="image" className="h-full w-full object-cover" />
         </div>
@@ -22,9 +22,9 @@ const Detail = ({ service }) => {
             company selling licenses. Yet its own business model disruption is
             only part of the story
           </p>
-          
-         <div className="flex justify-evenly">
-         <p>{price}</p>
+          <p>{fullDescription}</p>
+         <div className="flex justify-evenly mt-6">
+         <p className="text-blue-700 font-semibold text-xl py-2">{price}</p>
           <button className="btn btn-secondary">Place Order</button>
          </div>
         </div>

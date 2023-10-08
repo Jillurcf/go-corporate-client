@@ -13,12 +13,17 @@ import  slide_image3 from "../../../assets/awardCeremony.jpg";
 import slide_image4 from "../../../assets/productlaunch.jpg";
 import slide_image5 from "../../../assets/tradeShowandexpo.jpg";
 import slide_image6 from "../../../assets/teamBuildingWorkshop.jpg";
-import AosAnimation from "../AosAnimation";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Slider = () => {
- 
+  useEffect(()=>{
+    AOS.init()
+    AOS.refresh()
+  },[])
   return (
     <div className="container">
     
@@ -48,43 +53,53 @@ const Slider = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={slide_image1} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image1} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Corporate Meeting</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="relative" src={slide_image2} alt="" />
-          <h1 className="absolute text-red-700 bg-green-950 top-[50%] left-[20%]">Meeting</h1>
+          <img data-aos="fade-up" className="relative" src={slide_image2} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Conference and Seminer</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image3} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image3} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Award Cremony</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image4} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image4} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Product Launch</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image5} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image5} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Trade and Expo</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image6} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image6} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Team Building</a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={slide_image1} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image1} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Corporate Meeting</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="relative" src={slide_image2} alt="" />
-          <h1 className="absolute text-red-700 bg-green-950 top-[50%] left-[20%]">Meeting</h1>
+        <img data-aos="fade-up" className="relative" src={slide_image2} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Conference and Seminer</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image3} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image3} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Award Cremony</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image4} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image4} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Product Launch</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image5} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image5} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Trade and Expo</a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image6} alt="" />
+        <img data-aos="fade-up" className="relative" src={slide_image6} alt="" />
+          <a data-aos="fade-up"   className="btn bg-[gray] absolute text-white  top-[80%] left-[30%]">Team Building</a>
         </SwiperSlide>
 
         <div className="slider-controler">

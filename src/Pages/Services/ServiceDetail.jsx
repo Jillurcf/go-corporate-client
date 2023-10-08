@@ -18,7 +18,7 @@ const ServiceDetail = () => {
     return (
         <div>
            <h1 className="text-center text-6xl font-bold p-8">Service Detail</h1>
-            <div className="h-[50vh] items-center max-w-screen-2xl flex mx-auto">
+            <div className="h-auto items-center max-w-screen-2xl flex mx-auto">
          
                 <Detail service={service}></Detail>
                 
