@@ -1,36 +1,35 @@
-import { useContext, useState,} from "react";
+import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-  const {signInByEmailAndPassword, signInWithGoogle } = useContext(AuthContext);
+  const { signInByEmailAndPassword, signInWithGoogle } =
+   useContext(AuthContext)
   const location = useLocation();
   const navigate = useNavigate();
-  const [registerError, setRegisterError] = useState("")
-  
- 
+  // const [registerError, setRegisterError] = useState("");
+
   const handleSignIn = (e) => {
     e.preventDefault();
-   
+
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, password);
 
+    // setRegisterError("");
 
-    setRegisterError('')
-   
     signInByEmailAndPassword(email, password)
-    .then(result => {
-      console.log(result.user);
-      e.target.reset()
-    })
-    .catch(error => {
-      console.log(error);
-      setRegisterError(error.message)
-    })
-         navigate(location?.state ? location.state : "/");
+      .then((result) => {
+        console.log(result.user);
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.log(error);
+        // setRegisterError(error.message);
+      });
+    navigate(location?.state ? location.state : "/");
     swal("Success Login");
   };
 
@@ -95,8 +94,7 @@ const Login = () => {
             </Link>
           </p>
         </form>
-        {registerError && <p className="text-red-700">{registerError}</p>}
-       
+        {/* {registerError && <p className="text-red-700">{registerError}</p>} */}
       </div>
     </div>
   );

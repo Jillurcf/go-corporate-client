@@ -1,4 +1,4 @@
-// import { useLoaderData } from "react-router-dom";
+
 import ServiceCard from "./ServiceCard";
 import { useEffect, useState } from "react";
 
@@ -6,13 +6,15 @@ import { useEffect, useState } from "react";
 const Services = () => {
     // const services = useLoaderData()
     const [services, setServices] = useState([])
+   console.log(services);
+
     useEffect(()=>{
         fetch("./service.json")
         .then(res => res.json())
         .then(data=> setServices(data))
         
     },[])
-    console.log(services);
+   
     return (
         <div className="max-w-screen-xl mx-auto">
             <h1 className="text-center text-6xl m-36 font-bold">Service We Provide</h1>

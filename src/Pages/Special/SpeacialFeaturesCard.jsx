@@ -5,7 +5,7 @@ const SpeacialFeaturesCard = ({ feature }) => {
     <div>
       
       <div className="px-8 relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-  <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
+  <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
     <img
       src={specialfeaturesImage}
     />
