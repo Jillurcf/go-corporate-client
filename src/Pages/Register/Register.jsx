@@ -10,27 +10,34 @@ const Register = () => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
-    const photo = form.get("photo")
+    const photo = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
     console.log(name, photo, email, password);
     if (password.length < 6) {
-      // (?=.*[!@#$%^&*])
+    
       swal("The password is less than 6 characters");
     }
 
-    if (!/^[A-Z][!@#$%^&*]$/.test(password)) {
-      return swal("Password should have one capital letter and one special character");
-    } 
-  createUser(email, password)
-  .then((result) => {
-    console.log(result.user);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-swal("Registration SuccessFull");
-}
+    if (!/[A-Z]/.test(password)) {
+      return swal(
+        "Password should have one capital letter and one special character"
+      );
+    } else if (!/[!@#$%^&*]/.test(password)){
+      return swal(
+        "Password should have one capital letter and one special character"
+      );
+    }
+      createUser(email, password)
+        .then((result) => {
+          console.log(result.user);
+          e.target.reset()
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    swal("Registration SuccessFull");
+  };
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => console.log(result.user))
@@ -40,7 +47,7 @@ swal("Registration SuccessFull");
     <div className="max-w-screen-2xl h-auto items-center">
       <div className="item-center mt-24">
         <h2 className="text-center text-2xl font-bold">Please Register</h2>
-        <form onSubmit={handleRegister} className="card-body w-1/4 mx-auto">
+        <form onSubmit={handleRegister} className=" card-body w-96 md:w-1/4 mx-auto">
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
