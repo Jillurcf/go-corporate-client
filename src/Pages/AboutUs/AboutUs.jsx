@@ -20,7 +20,7 @@ const AboutUs = () => {
                 <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                   Tania Andrew
                 </h5>
-                <div className="5 flex items-center gap-0">
+                {/* <div className="5 flex items-center gap-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const AboutUs = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </div>
+                </div> */}
               </div>
               <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
                 Internationa Event Manager
@@ -95,9 +95,7 @@ const AboutUs = () => {
           </div>
           <div className="mb-6 p-0">
             <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-              "I found solution to all my design needs from Creative Tim. I use
-              them as a freelancer in my hobby projects for fun! And its really
-              affordable, very humble guys !!!"
+              
             </p>
             <h2 className="mt-8 text-xl font-semibold">Our Goal</h2>
             <p>
@@ -109,7 +107,7 @@ const AboutUs = () => {
             </p>
             <h2 className="mt-8 text-xl font-semibold">Our Vission</h2>
             <p>
-            To be the world's most trusted partner in corporate event management. Our vision is to redefine the way businesses experience events, pushing the boundaries of creativity and precision, and setting a global standard for excellence in the industry.
+            To be the worlds most trusted partner in corporate event management. Our vision is to redefine the way businesses experience events, pushing the boundaries of creativity and precision, and setting a global standard for excellence in the industry.
             </p>
           </div>
         </div>
