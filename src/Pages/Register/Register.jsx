@@ -1,11 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 const Register = () => {
   const { createUser, signInWithGoogle } = useContext(AuthContext);
   console.log(createUser);
+  const [showPassword, setShowPassword] = useState("")
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -87,15 +90,23 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text">
+                Password
+              </span>
             </label>
+            <div className="relative">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               placeholder="password"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               required
             />
+            <span className="absolute right-4 top-3" onClick={()=> setShowPassword(!showPassword)}>
+              {showPassword ? 
+            <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</span>
+            </div>
+            
             <label className="label">
               <p
                 onClick={handleGoogleSignIn}

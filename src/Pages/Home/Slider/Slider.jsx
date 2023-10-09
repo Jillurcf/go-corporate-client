@@ -12,15 +12,15 @@ import slide_image3 from "../../../assets/awardCeremony.jpg";
 import slide_image4 from "../../../assets/productlaunch.jpg";
 import slide_image5 from "../../../assets/tradeShowandexpo.jpg";
 import slide_image6 from "../../../assets/teamBuildingWorkshop.jpg";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 const Slider = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  //   AOS.refresh();
+  // }, []);
   return (
     <div className="container">
       
@@ -48,13 +48,13 @@ const Slider = () => {
       >
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image1}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Corporate Meeting
@@ -62,13 +62,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image2}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Conference and Seminer
@@ -76,13 +76,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image3}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Award Cremony
@@ -90,13 +90,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image4}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Product Launch
@@ -104,13 +104,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image5}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Trade and Expo
@@ -118,13 +118,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image6}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Team Building
@@ -133,13 +133,13 @@ const Slider = () => {
 
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image1}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Corporate Meeting
@@ -147,13 +147,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image2}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Conference and Seminer
@@ -161,13 +161,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image3}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Award Cremony
@@ -175,13 +175,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image4}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Product Launch
@@ -189,13 +189,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image5}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Trade and Expo
@@ -203,13 +203,13 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="relative"
             src={slide_image6}
             alt=""
           />
           <a
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="btn bg-[gray] absolute text-white  top-[90%] left-[30%]"
           >
             Team Building

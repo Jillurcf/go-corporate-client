@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { signInByEmailAndPassword, signInWithGoogle } =
@@ -10,6 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(null)
   const [userPasswrod, setUserPassword] = useState(null);
+  const [showPassword, setShowPassword] = useState("")
   // const [registerError, setRegisterError] = useState("");
 
   const handleSignIn = (e) => {
@@ -77,18 +79,23 @@ const Login = () => {
               className="input input-bordered"
               required
             />
+           
           </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input
-              type="password"
+           <div className="relative">
+           <input
+           
+              type={showPassword ? "text" : "password"}
               name="password"
               placeholder="password"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               required
             />
+             <span className="absolute top-3 right-4" onClick={()=> setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</span>
+           </div>
             <label className="label">
               <p
                 onClick={handleGoogleSignIn}
