@@ -5,6 +5,7 @@ import swal from "sweetalert";
 
 const Register = () => {
   const { createUser, signInWithGoogle } = useContext(AuthContext);
+  console.log(createUser);
 
   const handleRegister = (e) => {
     e.preventDefault();

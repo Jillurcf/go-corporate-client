@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 const NavBar = () => {
   const {user, logOut} = useContext(AuthContext)
+  console.log(user);
   useEffect(()=>{
     AOS.init()
     AOS.refresh()
@@ -28,7 +29,8 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          Home
+         
+          <h4 className="font-bold"> Home</h4>
         </NavLink>
         </li>
         <li>
@@ -38,7 +40,7 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          About Us
+          <h4 className="font-bold">About Us</h4>
         </NavLink>
         </li>
         <li>
@@ -48,7 +50,7 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          Services
+           <h4 className="font-bold">Services</h4>
         </NavLink>
         </li>
         <li>
@@ -58,7 +60,7 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          Special Features
+           <h4 className="font-bold">Special Features</h4>
         </NavLink>
         
       
@@ -70,7 +72,7 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          Special Offer
+        <h4 className="font-bold">Special Offer </h4>
         </NavLink>
        </li>
        
@@ -81,7 +83,7 @@ const NavBar = () => {
             isActive ? "text-blue-600" : isPending ? "pending" : ""
           }
         >
-          Contact
+          <h4 className="font-bold"> Contact</h4>
         </NavLink>
         </li>
      
