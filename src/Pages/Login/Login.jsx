@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -8,6 +8,8 @@ const Login = () => {
    useContext(AuthContext)
   const location = useLocation();
   const navigate = useNavigate();
+  const [userEmail, setUserEmail] = useState(null)
+  const [userPasswrod, setUserPassword] = useState(null);
   // const [registerError, setRegisterError] = useState("");
 
   const handleSignIn = (e) => {
@@ -19,18 +21,36 @@ const Login = () => {
     console.log(email, password);
 
     // setRegisterError("");
-
+   if(!userEmail){
+    swal("Email or passwrod does not match")
+  
+   }
+   else if(!userPasswrod){
+    swal("Email or passwrod does not match")
+   }
+  
     signInByEmailAndPassword(email, password)
-      .then((result) => {
-        console.log(result.user);
-        e.target.reset();
-      })
-      .catch((error) => {
-        console.log(error);
-        // setRegisterError(error.message);
-      });
-    navigate(location?.state ? location.state : "/");
-    swal("Success Login");
+    .then((result) => {
+      console.log(result.user);
+      e.target.reset();
+      let userEmail = result.user.email;
+      setUserEmail(userEmail)
+      let userPassword = result.user.passord;
+      setUserPassword(userPassword)
+      console.log("success", userEmail, userPassword);
+      swal("Login Success")
+      
+    })
+    .catch((error) => {
+      console.log(error);
+      let errorCode = error.code;
+      let errorMessage = error.message
+      console.log("error", errorCode, errorMessage);
+    });
+  navigate(location?.state ? location.state : "/");
+  // swal("Success Login");
+  
+   
   };
 
   const handleGoogleSignIn = () => {
